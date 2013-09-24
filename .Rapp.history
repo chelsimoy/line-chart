@@ -1,0 +1,118 @@
+ls()
+ls
+cd
+setwd("/~dataviz-home/line-chart")#
+#
+strikeouts <- read.csv("strikeouts.csv")#
+#
+head(strikeouts)
+dir()
+setwd("/~dataviz-home/line-chart")
+ls()
+strikeouts <- read.csv("strikeouts.csv")
+ls()
+setwd("/dataviz-fall-2013/line-chart")
+setwd("~/dataviz-fall-2013/line-chart")#
+#
+strikeouts <- read.csv("strikeouts.csv")#
+#
+head(strikeouts)
+setwd("/~dataviz-home/line-chart")
+dir()
+set wd ~datavis-home/line-chart
+setwd ~datavis-home/line-chart
+strikeouts <- read.csv("strikeouts.csv")
+strikeouts <- read.csv("strikeouts.csv")
+strikeouts <- read.csv("strikeouts.csv")
+setwd ~ datavis - home/line - chart
+strikeouts <- read.csv("strikeouts.csv")
+setwd("~/dataviz-fall-2013/line-chart")
+setwd(~/dataviz-fall-2013/line-chart)
+setwd("~/dataviz-fall-2013/line-chart")
+setwd("~/dataviz-fall%202013/line-chart")
+setwd("~/dataviz-fall%-2013/line-chart")
+setwd("~/dataviz-fall-2013/line-chart")
+strikeouts <- read.csv("strikeouts.csv")
+head(strikeouts)
+strikeouts()
+strikeout()
+tail()
+tail(strikeouts)
+mean()
+mean(strikeouts)
+median(strikeouts)
+g
+strikeouts$kpg <- strikeouts$so / strikeouts$g
+head(strikeouts)
+max(striektouts)
+max(strikeouts$kpg)
+max(strikeouts)
+min(strikeouts$kpg)
+subset(strikeouts, kpg == max(strikeouts$kpg))
+subset(strikeouts, kpg == min(strikeouts$kpg))
+oakland <- subset(strikeouts, franchise == "OAK")
+class(oakland)
+ls()
+head(oakland)
+max(oakland)
+max(OAK)
+max(data.frame)
+max(strikeouts$kpg)
+subset(strikeouts, kpg== max(strikeouts$kpg))
+subset(strikeouts, OAK == max(strikeouts$kpg))
+subset(strikeouts, OAK == max(OAK$kpg))
+subset(oakland, kpg == max(oakland$kpg))
+subset(oakland, kpg == min(oakland$kpg))
+SanFrancisco <- subset(strikeouts, franchise == "SFG")
+head(strikeouts)
+max(SanFrancisco$kpg)
+oakland <- oakland[order(oakland$kpg, decreasing=T)]
+oakland <- oakland[order(oakland$kpg, deceasing=T),]
+oakland <- oakland[order(oakland$kpg, deceasing=T),]
+oakland <- oakland[order(oakland$kpg, decreasing=T),]
+head(oakland)
+plot(oakland$year, oakland$kpg)
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg))
+;
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg)))
+oakland[order(oakland$year),]
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", type="l",lwd="2")
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", ylab="year", xlab="strikouts per game", type="l",lwd="2")
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", type="l",lwd="2")
+oakland <- oakland[order(oakland$year, decreasing=T),]
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", type="l",lwd="2")
+minnesota <- subset(strikeouts, franchise == "MIN")
+head(MIN)
+head(minnesota)
+tail(minnesota)
+max(minnesota$kpg)
+min(minnesota$kpg)
+subset(minnesota, kpg =="minnesota$kpg" )
+subset(minnesota, MIN == max(strikeouts$kpg))
+minnesota <- minnesota[order(minnesota$kpg, decreasing== T)]
+minnesota <- minnesota[order(minnesota$kpg, decreasing== T),]
+minnesota <- minnesota[order(minnesota$kpg, decreasing== T),]
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg)))
+points(min$year, min$kpg, pch=16, col="blue")
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg)))
+points(min$year, min$kpg, pch=16, col="blue")
+head(min)
+MINNESOTA
+head(minnesota)
+points(minnesota$year, minnesota$kpg, pch=16, col="blue")
+max_kpg <- max(c(max(oakland$kpg), minnesota$kpg))
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg) type="l, lwd=2"))
+plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg) type="l, lwd=2")
+plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim= c(0, max_kpg) type="l, lwd=2")
+plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim= c(0, max_kpg) type="l, lwd=2"))
+plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l, lwd=2"))
+plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2"))
+plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2")
+plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2")
+lines(min$year, min$kpg, col="blue", lwd = 2)
+plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2")
+plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2)
+lines(min$year, min$kpg, col="blue", lwd=2)
+lines(min$year, min$kpg, col="blue", lwd=2)
+lines(minnesota$year, min$kpg, col="blue", lwd=2)
+lines(minnesota$year, minnesota$kpg, col="blue", lwd=2)

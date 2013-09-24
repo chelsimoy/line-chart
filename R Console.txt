@@ -1,0 +1,512 @@
+
+R version 3.0.1 (2013-05-16) -- "Good Sport"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin10.8.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.61 (6492) x86_64-apple-darwin10.8.0]
+
+[History restored from /Users/chelsimoy/.Rapp.history]
+
+> ls()
+character(0)
+> ls
+function (name, pos = -1L, envir = as.environment(pos), all.names = FALSE, 
+    pattern) 
+{
+    if (!missing(name)) {
+        nameValue <- try(name, silent = TRUE)
+        if (identical(class(nameValue), "try-error")) {
+            name <- substitute(name)
+            if (!is.character(name)) 
+                name <- deparse(name)
+            warning(gettextf("%s converted to character string", 
+                sQuote(name)), domain = NA)
+            pos <- name
+        }
+        else pos <- nameValue
+    }
+    all.names <- .Internal(ls(envir, all.names))
+    if (!missing(pattern)) {
+        if ((ll <- length(grep("[", pattern, fixed = TRUE))) && 
+            ll != length(grep("]", pattern, fixed = TRUE))) {
+            if (pattern == "[") {
+                pattern <- "\\["
+                warning("replaced regular expression pattern '[' by  '\\\\['")
+            }
+            else if (length(grep("[^\\\\]\\[<-", pattern))) {
+                pattern <- sub("\\[<-", "\\\\\\[<-", pattern)
+                warning("replaced '[<-' by '\\\\[<-' in regular expression pattern")
+            }
+        }
+        grep(pattern, all.names, value = TRUE)
+    }
+    else all.names
+}
+<bytecode: 0x10088be68>
+<environment: namespace:base>
+> cd
+Error: object 'cd' not found
+> 
+> setwd("/~dataviz-home/line-chart")
+Error in setwd("/~dataviz-home/line-chart") : 
+  cannot change working directory
+> 
+> strikeouts <- read.csv("strikeouts.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'strikeouts.csv': No such file or directory
+> 
+> head(strikeouts)
+Error in head(strikeouts) : object 'strikeouts' not found
+> dir()
+ [1] "Applications"              "dataviz-fall 2013"         "Desktop"                   "Documents"                
+ [5] "Downloads"                 "Dropbox"                   "Graduate School Berkeley " "Graphics"                 
+ [9] "html_css"                  "Library"                   "Movies"                    "Music"                    
+[13] "my_webpage"                "Pictures"                  "Public"                   
+>  setwd("/~dataviz-home/line-chart")
+Error in setwd("/~dataviz-home/line-chart") : 
+  cannot change working directory
+> 
+> ls()
+character(0)
+> strikeouts <- read.csv("strikeouts.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'strikeouts.csv': No such file or directory
+> ls()
+character(0)
+> setwd("/dataviz-fall-2013/line-chart")
+Error in setwd("/dataviz-fall-2013/line-chart") : 
+  cannot change working directory
+> 
+> setwd("~/dataviz-fall-2013/line-chart")
+Error in setwd("~/dataviz-fall-2013/line-chart") : 
+  cannot change working directory
+> 
+> strikeouts <- read.csv("strikeouts.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'strikeouts.csv': No such file or directory
+> 
+> head(strikeouts)
+Error in head(strikeouts) : object 'strikeouts' not found
+> setwd("/~dataviz-home/line-chart")
+Error in setwd("/~dataviz-home/line-chart") : 
+  cannot change working directory
+> dir()
+ [1] "Applications"              "dataviz-fall 2013"         "Desktop"                   "Documents"                
+ [5] "Downloads"                 "Dropbox"                   "Graduate School Berkeley " "Graphics"                 
+ [9] "html_css"                  "Library"                   "Movies"                    "Music"                    
+[13] "my_webpage"                "Pictures"                  "Public"                   
+> set wd ~datavis-home/line-chart
+Error: unexpected symbol in "set wd"
+> setwd ~datavis-home/line-chart
+setwd ~ datavis - home/line - chart
+>  strikeouts <- read.csv("strikeouts.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'strikeouts.csv': No such file or directory
+> strikeouts <- read.csv("strikeouts.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'strikeouts.csv': No such file or directory
+> strikeouts <- read.csv("strikeouts.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'strikeouts.csv': No such file or directory
+> setwd ~ datavis - home/line - chart
+setwd ~ datavis - home/line - chart
+> 
+> strikeouts <- read.csv("strikeouts.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'strikeouts.csv': No such file or directory
+> setwd("~/dataviz-fall-2013/line-chart")
+Error in setwd("~/dataviz-fall-2013/line-chart") : 
+  cannot change working directory
+> setwd(~/dataviz-fall-2013/line-chart)
+Error: unexpected '/' in "setwd(~/"
+> setwd("~/dataviz-fall-2013/line-chart")
+Error in setwd("~/dataviz-fall-2013/line-chart") : 
+  cannot change working directory
+> setwd("~/dataviz-fall%202013/line-chart")
+Error in setwd("~/dataviz-fall%202013/line-chart") : 
+  cannot change working directory
+> setwd("~/dataviz-fall%-2013/line-chart")
+Error in setwd("~/dataviz-fall%-2013/line-chart") : 
+  cannot change working directory
+> setwd("~/dataviz-fall-2013/line-chart")
+> strikeouts <- read.csv("strikeouts.csv")
+> head(strikeouts)
+  X           histname               longname year histcode franchise  so   g
+1 1  Boston Beaneaters 1901 Boston Beaneaters 1901      BSN       ATL 518 140
+2 2  Milwaukee Brewers 1901 Milwaukee Brewers 1901      MLA       BAL 387 139
+3 3   Boston Americans  1901 Boston Americans 1901      BOS       BOS 281 138
+4 4    Chicago Orphans   1901 Chicago Orphans 1901      CHC       CHC 530 140
+5 5  Chicago White Sox 1901 Chicago White Sox 1901      CHW       CHW 336 137
+6 6    Cincinnati Reds   1901 Cincinnati Reds 1901      CIN       CIN 587 142
+> 
+> strikeouts()
+Error: could not find function "strikeouts"
+> strikeout()
+Error: could not find function "strikeout"
+> tail()
+Error in tail.default() : argument "x" is missing, with no default
+> tail(strikeouts)
+        X              histname                  longname year histcode franchise   so   g
+2311 2311  San Francisco Giants 2012 San Francisco Giants 2012      SFG       SFG 1097 162
+2312 2312   St. Louis Cardinals  2012 St. Louis Cardinals 2012      STL       STL 1192 162
+2313 2313        Tampa Bay Rays       2012 Tampa Bay Rays 2012      TBR       TBD 1323 162
+2314 2314         Texas Rangers        2012 Texas Rangers 2012      TEX       TEX 1103 162
+2315 2315     Toronto Blue Jays    2012 Toronto Blue Jays 2012      TOR       TOR 1251 162
+2316 2316  Washington Nationals 2012 Washington Nationals 2012      WSN       WSN 1325 162
+> mean()
+Error in mean.default() : argument "x" is missing, with no default
+> mean(strikeouts)
+[1] NA
+Warning message:
+In mean.default(strikeouts) :
+  argument is not numeric or logical: returning NA
+> median(strikeouts)
+Error in median.default(strikeouts) : need numeric data
+> g
+Error: object 'g' not found
+> strikeouts$kpg <- strikeouts$so / strikeouts$g
+> 
+> head(strikeouts)
+  X           histname               longname year histcode franchise  so   g      kpg
+1 1  Boston Beaneaters 1901 Boston Beaneaters 1901      BSN       ATL 518 140 3.700000
+2 2  Milwaukee Brewers 1901 Milwaukee Brewers 1901      MLA       BAL 387 139 2.784173
+3 3   Boston Americans  1901 Boston Americans 1901      BOS       BOS 281 138 2.036232
+4 4    Chicago Orphans   1901 Chicago Orphans 1901      CHC       CHC 530 140 3.785714
+5 5  Chicago White Sox 1901 Chicago White Sox 1901      CHW       CHW 336 137 2.452555
+6 6    Cincinnati Reds   1901 Cincinnati Reds 1901      CIN       CIN 587 142 4.133803
+> 
+> max(striektouts)
+Error: object 'striektouts' not found
+> max(strikeouts$kpg)
+[1] 9.438272
+> max(strikeouts)
+Error in FUN(X[[1L]], ...) : 
+  only defined on a data frame with all numeric variables
+> min(strikeouts$kpg)
+[1] 2.013072
+> subset(strikeouts, kpg == max(strikeouts$kpg))
+        X              histname                  longname year histcode franchise   so   g      kpg
+2228 2228  Arizona Diamondbacks 2010 Arizona Diamondbacks 2010      ARI       ARI 1529 162 9.438272
+> subset(strikeouts, kpg == min(strikeouts$kpg))
+      X         histname             longname year histcode franchise  so   g      kpg
+326 326  Cincinnati Reds 1921 Cincinnati Reds 1921      CIN       CIN 308 153 2.013072
+> 
+> oakland <- subset(strikeouts, franchise == "OAK")
+> class(oakland)
+[1] "data.frame"
+> ls()
+[1] "oakland"    "strikeouts"
+> 
+>  head(oakland)
+    X                histname                    longname year histcode franchise  so   g      kpg
+12 12  Philadelphia Athletics 1901 Philadelphia Athletics 1901      PHA       OAK 344 137 2.510949
+28 28  Philadelphia Athletics 1902 Philadelphia Athletics 1902      PHA       OAK 288 137 2.102190
+44 44  Philadelphia Athletics 1903 Philadelphia Athletics 1903      PHA       OAK 511 137 3.729927
+60 60  Philadelphia Athletics 1904 Philadelphia Athletics 1904      PHA       OAK 600 155 3.870968
+76 76  Philadelphia Athletics 1905 Philadelphia Athletics 1905      PHA       OAK 641 152 4.217105
+92 92  Philadelphia Athletics 1906 Philadelphia Athletics 1906      PHA       OAK 661 149 4.436242
+> 
+> max(oakland)
+Error in FUN(X[[1L]], ...) : 
+  only defined on a data frame with all numeric variables
+> max(OAK)
+Error: object 'OAK' not found
+> max(data.frame)
+Error in max(data.frame) : invalid 'type' (closure) of argument
+> max(strikeouts$kpg)
+[1] 9.438272
+> subset(strikeouts, kpg== max(strikeouts$kpg))
+        X              histname                  longname year histcode franchise   so   g      kpg
+2228 2228  Arizona Diamondbacks 2010 Arizona Diamondbacks 2010      ARI       ARI 1529 162 9.438272
+> subset(strikeouts, OAK == max(strikeouts$kpg))
+Error in eval(expr, envir, enclos) : object 'OAK' not found
+> subset(strikeouts, OAK == max(OAK$kpg))
+Error in eval(expr, envir, enclos) : object 'OAK' not found
+> subset(oakland, kpg == max(oakland$kpg))
+        X           histname               longname year histcode franchise   so   g      kpg
+2306 2306  Oakland Athletics 2012 Oakland Athletics 2012      OAK       OAK 1387 162 8.561728
+> subset()
+> subset(oakland, kpg == min(oakland$kpg))
+      X                histname                    longname year histcode franchise  so   g      kpg
+428 428  Philadelphia Athletics 1927 Philadelphia Athletics 1927      PHA       OAK 325 155 2.096774
+> 
+> SanFrancisco <- subset(strikeouts, franchise == "SFG")
+> head(strikeouts)
+  X           histname               longname year histcode franchise  so   g      kpg
+1 1  Boston Beaneaters 1901 Boston Beaneaters 1901      BSN       ATL 518 140 3.700000
+2 2  Milwaukee Brewers 1901 Milwaukee Brewers 1901      MLA       BAL 387 139 2.784173
+3 3   Boston Americans  1901 Boston Americans 1901      BOS       BOS 281 138 2.036232
+4 4    Chicago Orphans   1901 Chicago Orphans 1901      CHC       CHC 530 140 3.785714
+5 5  Chicago White Sox 1901 Chicago White Sox 1901      CHW       CHW 336 137 2.452555
+6 6    Cincinnati Reds   1901 Cincinnati Reds 1901      CIN       CIN 587 142 4.133803
+> 
+> max(SanFrancisco$kpg)
+[1] 7.361111
+> 
+> oakland <- oakland[order(oakland$kpg, decreasing=T)]
+Error in `[.data.frame`(oakland, order(oakland$kpg, decreasing = T)) : 
+  undefined columns selected
+> oakland <- oakland[order(oakland$kpg, deceasing=T),]
+Error in order(oakland$kpg, deceasing = T) : argument lengths differ
+> oakland <- oakland[order(oakland$kpg, deceasing=T),]
+Error in order(oakland$kpg, deceasing = T) : argument lengths differ
+> oakland <- oakland[order(oakland$kpg, decreasing=T),]
+> 
+> head(oakland)
+        X           histname               longname year histcode franchise   so   g      kpg
+2306 2306  Oakland Athletics 2012 Oakland Athletics 2012      OAK       OAK 1387 162 8.561728
+2186 2186  Oakland Athletics 2008 Oakland Athletics 2008      OAK       OAK 1226 161 7.614907
+1857 1857  Oakland Athletics 1997 Oakland Athletics 1997      OAK       OAK 1181 162 7.290123
+1946 1946  Oakland Athletics 2000 Oakland Athletics 2000      OAK       OAK 1159 161 7.198758
+1916 1916  Oakland Athletics 1999 Oakland Athletics 1999      OAK       OAK 1129 162 6.969136
+1886 1886  Oakland Athletics 1998 Oakland Athletics 1998      OAK       OAK 1122 162 6.925926
+> 
+> plot(oakland$year, oakland$kpg)
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg)) 
++ 
++ ; 
+Error: unexpected ';' in:
+"
+;"
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg)))
+> oakland[order(oakland$year),]
+        X                histname                    longname year histcode franchise   so   g      kpg
+12     12  Philadelphia Athletics 1901 Philadelphia Athletics 1901      PHA       OAK  344 137 2.510949
+28     28  Philadelphia Athletics 1902 Philadelphia Athletics 1902      PHA       OAK  288 137 2.102190
+44     44  Philadelphia Athletics 1903 Philadelphia Athletics 1903      PHA       OAK  511 137 3.729927
+60     60  Philadelphia Athletics 1904 Philadelphia Athletics 1904      PHA       OAK  600 155 3.870968
+76     76  Philadelphia Athletics 1905 Philadelphia Athletics 1905      PHA       OAK  641 152 4.217105
+92     92  Philadelphia Athletics 1906 Philadelphia Athletics 1906      PHA       OAK  661 149 4.436242
+108   108  Philadelphia Athletics 1907 Philadelphia Athletics 1907      PHA       OAK  547 150 3.646667
+124   124  Philadelphia Athletics 1908 Philadelphia Athletics 1908      PHA       OAK  595 157 3.789809
+140   140  Philadelphia Athletics 1909 Philadelphia Athletics 1909      PHA       OAK  577 153 3.771242
+156   156  Philadelphia Athletics 1910 Philadelphia Athletics 1910      PHA       OAK  573 155 3.696774
+172   172  Philadelphia Athletics 1911 Philadelphia Athletics 1911      PHA       OAK  517 152 3.401316
+188   188  Philadelphia Athletics 1912 Philadelphia Athletics 1912      PHA       OAK  563 153 3.679739
+204   204  Philadelphia Athletics 1913 Philadelphia Athletics 1913      PHA       OAK  547 153 3.575163
+220   220  Philadelphia Athletics 1914 Philadelphia Athletics 1914      PHA       OAK  517 158 3.272152
+236   236  Philadelphia Athletics 1915 Philadelphia Athletics 1915      PHA       OAK  634 154 4.116883
+252   252  Philadelphia Athletics 1916 Philadelphia Athletics 1916      PHA       OAK  631 154 4.097403
+268   268  Philadelphia Athletics 1917 Philadelphia Athletics 1917      PHA       OAK  519 154 3.370130
+284   284  Philadelphia Athletics 1918 Philadelphia Athletics 1918      PHA       OAK  485 130 3.730769
+300   300  Philadelphia Athletics 1919 Philadelphia Athletics 1919      PHA       OAK  565 140 4.035714
+316   316  Philadelphia Athletics 1920 Philadelphia Athletics 1920      PHA       OAK  575 156 3.685897
+332   332  Philadelphia Athletics 1921 Philadelphia Athletics 1921      PHA       OAK  570 155 3.677419
+348   348  Philadelphia Athletics 1922 Philadelphia Athletics 1922      PHA       OAK  590 155 3.806452
+364   364  Philadelphia Athletics 1923 Philadelphia Athletics 1923      PHA       OAK  523 153 3.418301
+380   380  Philadelphia Athletics 1924 Philadelphia Athletics 1924      PHA       OAK  480 152 3.157895
+396   396  Philadelphia Athletics 1925 Philadelphia Athletics 1925      PHA       OAK  430 153 2.810458
+412   412  Philadelphia Athletics 1926 Philadelphia Athletics 1926      PHA       OAK  452 150 3.013333
+428   428  Philadelphia Athletics 1927 Philadelphia Athletics 1927      PHA       OAK  325 155 2.096774
+444   444  Philadelphia Athletics 1928 Philadelphia Athletics 1928      PHA       OAK  435 153 2.843137
+460   460  Philadelphia Athletics 1929 Philadelphia Athletics 1929      PHA       OAK  440 151 2.913907
+476   476  Philadelphia Athletics 1930 Philadelphia Athletics 1930      PHA       OAK  531 154 3.448052
+492   492  Philadelphia Athletics 1931 Philadelphia Athletics 1931      PHA       OAK  543 153 3.549020
+508   508  Philadelphia Athletics 1932 Philadelphia Athletics 1932      PHA       OAK  629 154 4.084416
+524   524  Philadelphia Athletics 1933 Philadelphia Athletics 1933      PHA       OAK  620 152 4.078947
+540   540  Philadelphia Athletics 1934 Philadelphia Athletics 1934      PHA       OAK  585 153 3.823529
+556   556  Philadelphia Athletics 1935 Philadelphia Athletics 1935      PHA       OAK  603 149 4.046980
+572   572  Philadelphia Athletics 1936 Philadelphia Athletics 1936      PHA       OAK  592 154 3.844156
+588   588  Philadelphia Athletics 1937 Philadelphia Athletics 1937      PHA       OAK  557 154 3.616883
+604   604  Philadelphia Athletics 1938 Philadelphia Athletics 1938      PHA       OAK  590 154 3.831169
+620   620  Philadelphia Athletics 1939 Philadelphia Athletics 1939      PHA       OAK  531 153 3.470588
+636   636  Philadelphia Athletics 1940 Philadelphia Athletics 1940      PHA       OAK  655 154 4.253247
+652   652  Philadelphia Athletics 1941 Philadelphia Athletics 1941      PHA       OAK  588 154 3.818182
+668   668  Philadelphia Athletics 1942 Philadelphia Athletics 1942      PHA       OAK  489 154 3.175325
+684   684  Philadelphia Athletics 1943 Philadelphia Athletics 1943      PHA       OAK  465 155 3.000000
+700   700  Philadelphia Athletics 1944 Philadelphia Athletics 1944      PHA       OAK  490 155 3.161290
+716   716  Philadelphia Athletics 1945 Philadelphia Athletics 1945      PHA       OAK  460 153 3.006536
+732   732  Philadelphia Athletics 1946 Philadelphia Athletics 1946      PHA       OAK  596 155 3.845161
+748   748  Philadelphia Athletics 1947 Philadelphia Athletics 1947      PHA       OAK  563 156 3.608974
+764   764  Philadelphia Athletics 1948 Philadelphia Athletics 1948      PHA       OAK  523 154 3.396104
+780   780  Philadelphia Athletics 1949 Philadelphia Athletics 1949      PHA       OAK  493 154 3.201299
+796   796  Philadelphia Athletics 1950 Philadelphia Athletics 1950      PHA       OAK  491 154 3.188312
+812   812  Philadelphia Athletics 1951 Philadelphia Athletics 1951      PHA       OAK  564 154 3.662338
+828   828  Philadelphia Athletics 1952 Philadelphia Athletics 1952      PHA       OAK  558 155 3.600000
+844   844  Philadelphia Athletics 1953 Philadelphia Athletics 1953      PHA       OAK  602 157 3.834395
+860   860  Philadelphia Athletics 1954 Philadelphia Athletics 1954      PHA       OAK  677 156 4.339744
+876   876   Kansas City Athletics  1955 Kansas City Athletics 1955      KCA       OAK  718 155 4.632258
+892   892   Kansas City Athletics  1956 Kansas City Athletics 1956      KCA       OAK  725 154 4.707792
+908   908   Kansas City Athletics  1957 Kansas City Athletics 1957      KCA       OAK  761 154 4.941558
+924   924   Kansas City Athletics  1958 Kansas City Athletics 1958      KCA       OAK  747 156 4.788462
+940   940   Kansas City Athletics  1959 Kansas City Athletics 1959      KCA       OAK  780 154 5.064935
+956   956   Kansas City Athletics  1960 Kansas City Athletics 1960      KCA       OAK  744 155 4.800000
+973   973   Kansas City Athletics  1961 Kansas City Athletics 1961      KCA       OAK  770 162 4.753086
+993   993   Kansas City Athletics  1962 Kansas City Athletics 1962      KCA       OAK  803 162 4.956790
+1013 1013   Kansas City Athletics  1963 Kansas City Athletics 1963      KCA       OAK  829 162 5.117284
+1033 1033   Kansas City Athletics  1964 Kansas City Athletics 1964      KCA       OAK 1104 163 6.773006
+1053 1053   Kansas City Athletics  1965 Kansas City Athletics 1965      KCA       OAK 1020 162 6.296296
+1073 1073   Kansas City Athletics  1966 Kansas City Athletics 1966      KCA       OAK  982 160 6.137500
+1093 1093   Kansas City Athletics  1967 Kansas City Athletics 1967      KCA       OAK 1019 161 6.329193
+1113 1113       Oakland Athletics      1968 Oakland Athletics 1968      OAK       OAK 1022 163 6.269939
+1135 1135       Oakland Athletics      1969 Oakland Athletics 1969      OAK       OAK  953 162 5.882716
+1159 1159       Oakland Athletics      1970 Oakland Athletics 1970      OAK       OAK  977 162 6.030864
+1183 1183       Oakland Athletics      1971 Oakland Athletics 1971      OAK       OAK 1018 161 6.322981
+1207 1207       Oakland Athletics      1972 Oakland Athletics 1972      OAK       OAK  886 155 5.716129
+1231 1231       Oakland Athletics      1973 Oakland Athletics 1973      OAK       OAK  919 162 5.672840
+1255 1255       Oakland Athletics      1974 Oakland Athletics 1974      OAK       OAK  876 162 5.407407
+1279 1279       Oakland Athletics      1975 Oakland Athletics 1975      OAK       OAK  846 162 5.222222
+1303 1303       Oakland Athletics      1976 Oakland Athletics 1976      OAK       OAK  818 161 5.080745
+1327 1327       Oakland Athletics      1977 Oakland Athletics 1977      OAK       OAK  910 161 5.652174
+1353 1353       Oakland Athletics      1978 Oakland Athletics 1978      OAK       OAK  800 162 4.938272
+1379 1379       Oakland Athletics      1979 Oakland Athletics 1979      OAK       OAK  751 162 4.635802
+1405 1405       Oakland Athletics      1980 Oakland Athletics 1980      OAK       OAK  824 162 5.086420
+1431 1431       Oakland Athletics      1981 Oakland Athletics 1981      OAK       OAK  647 109 5.935780
+1457 1457       Oakland Athletics      1982 Oakland Athletics 1982      OAK       OAK  948 162 5.851852
+1483 1483       Oakland Athletics      1983 Oakland Athletics 1983      OAK       OAK  872 162 5.382716
+1509 1509       Oakland Athletics      1984 Oakland Athletics 1984      OAK       OAK  871 162 5.376543
+1535 1535       Oakland Athletics      1985 Oakland Athletics 1985      OAK       OAK  861 162 5.314815
+1561 1561       Oakland Athletics      1986 Oakland Athletics 1986      OAK       OAK  983 162 6.067901
+1587 1587       Oakland Athletics      1987 Oakland Athletics 1987      OAK       OAK 1056 162 6.518519
+1613 1613       Oakland Athletics      1988 Oakland Athletics 1988      OAK       OAK  926 162 5.716049
+1639 1639       Oakland Athletics      1989 Oakland Athletics 1989      OAK       OAK  855 162 5.277778
+1665 1665       Oakland Athletics      1990 Oakland Athletics 1990      OAK       OAK  992 162 6.123457
+1691 1691       Oakland Athletics      1991 Oakland Athletics 1991      OAK       OAK  981 162 6.055556
+1717 1717       Oakland Athletics      1992 Oakland Athletics 1992      OAK       OAK  831 162 5.129630
+1745 1745       Oakland Athletics      1993 Oakland Athletics 1993      OAK       OAK 1048 162 6.469136
+1773 1773       Oakland Athletics      1994 Oakland Athletics 1994      OAK       OAK  686 114 6.017544
+1801 1801       Oakland Athletics      1995 Oakland Athletics 1995      OAK       OAK  911 144 6.326389
+1829 1829       Oakland Athletics      1996 Oakland Athletics 1996      OAK       OAK 1114 162 6.876543
+1857 1857       Oakland Athletics      1997 Oakland Athletics 1997      OAK       OAK 1181 162 7.290123
+1886 1886       Oakland Athletics      1998 Oakland Athletics 1998      OAK       OAK 1122 162 6.925926
+1916 1916       Oakland Athletics      1999 Oakland Athletics 1999      OAK       OAK 1129 162 6.969136
+1946 1946       Oakland Athletics      2000 Oakland Athletics 2000      OAK       OAK 1159 161 7.198758
+1976 1976       Oakland Athletics      2001 Oakland Athletics 2001      OAK       OAK 1021 162 6.302469
+2006 2006       Oakland Athletics      2002 Oakland Athletics 2002      OAK       OAK 1008 162 6.222222
+2036 2036       Oakland Athletics      2003 Oakland Athletics 2003      OAK       OAK  898 162 5.543210
+2066 2066       Oakland Athletics      2004 Oakland Athletics 2004      OAK       OAK 1061 162 6.549383
+2096 2096       Oakland Athletics      2005 Oakland Athletics 2005      OAK       OAK  819 162 5.055556
+2126 2126       Oakland Athletics      2006 Oakland Athletics 2006      OAK       OAK  976 162 6.024691
+2156 2156       Oakland Athletics      2007 Oakland Athletics 2007      OAK       OAK 1119 162 6.907407
+2186 2186       Oakland Athletics      2008 Oakland Athletics 2008      OAK       OAK 1226 161 7.614907
+2216 2216       Oakland Athletics      2009 Oakland Athletics 2009      OAK       OAK 1046 162 6.456790
+2246 2246       Oakland Athletics      2010 Oakland Athletics 2010      OAK       OAK 1061 162 6.549383
+2276 2276       Oakland Athletics      2011 Oakland Athletics 2011      OAK       OAK 1094 162 6.753086
+2306 2306       Oakland Athletics      2012 Oakland Athletics 2012      OAK       OAK 1387 162 8.561728
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", type="l",lwd="2")
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", ylab="year", xlab="strikouts per game", type="l",lwd="2")
+> 
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", type="l",lwd="2")
+> oakland <- oakland[order(oakland$year, decreasing=T),]
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Strikeouts per game:A's", xlab="year", ylab="strikouts per game", type="l",lwd="2")
+> minnesota <- subset(strikeouts, franchise == "MIN")
+> head(MIN)
+Error in head(MIN) : object 'MIN' not found
+> head(minnesota)
+    X             histname                 longname year histcode franchise  so   g      kpg
+10 10  Washington Senators 1901 Washington Senators 1901      WSH       MIN 339 138 2.456522
+26 26  Washington Senators 1902 Washington Senators 1902      WSH       MIN 292 138 2.115942
+42 42  Washington Senators 1903 Washington Senators 1903      WSH       MIN 466 140 3.328571
+58 58  Washington Senators 1904 Washington Senators 1904      WSH       MIN 756 157 4.815287
+74 74  Washington Senators 1905 Washington Senators 1905      WSH       MIN 818 154 5.311688
+90 90  Washington Senators 1906 Washington Senators 1906      WSH       MIN 612 151 4.052980
+> tail(minnesota)
+        X         histname             longname year histcode franchise   so   g      kpg
+2153 2153  Minnesota Twins 2007 Minnesota Twins 2007      MIN       MIN  839 162 5.179012
+2183 2183  Minnesota Twins 2008 Minnesota Twins 2008      MIN       MIN  979 163 6.006135
+2213 2213  Minnesota Twins 2009 Minnesota Twins 2009      MIN       MIN 1021 163 6.263804
+2243 2243  Minnesota Twins 2010 Minnesota Twins 2010      MIN       MIN  967 162 5.969136
+2273 2273  Minnesota Twins 2011 Minnesota Twins 2011      MIN       MIN 1048 162 6.469136
+2303 2303  Minnesota Twins 2012 Minnesota Twins 2012      MIN       MIN 1069 162 6.598765
+> max(minnesota$kpg)
+[1] 6.919753
+> min(minnesota$kpg)
+[1] 2.115942
+> subset(minnesota, kpg =="minnesota$kpg" )
+[1] X         histname  longname  year      histcode  franchise so        g         kpg      
+<0 rows> (or 0-length row.names)
+> subset(minnesota, MIN == max(strikeouts$kpg))
+Error in eval(expr, envir, enclos) : object 'MIN' not found
+> minnesota <- minnesota[order(minnesota$kpg, decreasing== T)]
+Error in order(minnesota$kpg, decreasing == T) : 
+  object 'decreasing' not found
+> minnesota <- minnesota[order(minnesota$kpg, decreasing== T),]
+Error in order(minnesota$kpg, decreasing == T) : 
+  object 'decreasing' not found
+> minnesota <- minnesota[order(minnesota$kpg, decreasing== T),]
+Error in order(minnesota$kpg, decreasing == T) : 
+  object 'decreasing' not found
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg)))
+> points(min$year, min$kpg, pch=16, col="blue")
+Error in min$year : object of type 'builtin' is not subsettable
+> 
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg)))
+> points(min$year, min$kpg, pch=16, col="blue")
+Error in min$year : object of type 'builtin' is not subsettable
+> points(min$year, min$kpg, pch=16, col="blue")
+> head(min)
+                   
+1 .Primitive("min")
+> MINNESOTA
+Error: object 'MINNESOTA' not found
+> head(minnesota)
+    X             histname                 longname year histcode franchise  so   g      kpg
+10 10  Washington Senators 1901 Washington Senators 1901      WSH       MIN 339 138 2.456522
+26 26  Washington Senators 1902 Washington Senators 1902      WSH       MIN 292 138 2.115942
+42 42  Washington Senators 1903 Washington Senators 1903      WSH       MIN 466 140 3.328571
+58 58  Washington Senators 1904 Washington Senators 1904      WSH       MIN 756 157 4.815287
+74 74  Washington Senators 1905 Washington Senators 1905      WSH       MIN 818 154 5.311688
+90 90  Washington Senators 1906 Washington Senators 1906      WSH       MIN 612 151 4.052980
+> points(minnesota$year, minnesota$kpg, pch=16, col="blue")
+> max_kpg <- max(c(max(oakland$kpg), minnesota$kpg))
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg) type="l, lwd=2"))
+Error: unexpected symbol in "plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg) type"
+> plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg) type="l, lwd=2")
+Error: unexpected symbol in "plot(oakland$year, oakland$kpg, pch=16, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim=c(0, max(oakland$kpg) type"
+> plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim= c(0, max_kpg) type="l, lwd=2")
+Error: unexpected symbol in "plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim= c(0, max_kpg) type"
+> plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim= c(0, max_kpg) type="l, lwd=2"))
+Error: unexpected symbol in "plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim= c(0, max_kpg) type"
+> 
+> 
+> plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l, lwd=2"))
+Error: unexpected ')' in "plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l, lwd=2"))"
+> plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2"))
++ plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2")
+Error: unexpected string constant in:
+"plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2"))
+plot(oakland$year, oakland$kpg, col=""
+> plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2")
++ lines(min$year, min$kpg, col="blue", lwd = 2)
+Error: unexpected string constant in:
+"plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2")
+lines(min$year, min$kpg, col=""
+> plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2")
++ 
+> plot(oakland$year, oakland$kpg, col="red", main="Oakland vs Minnesota", xlab="year", ylab="strikouts per game", ylim = c(0, max_kpg), type="l", lwd=2)
+> lines(min$year, min$kpg, col="blue", lwd=2)
+Error in min$year : object of type 'builtin' is not subsettable
+> lines(min$year, min$kpg, col="blue", lwd=2)
+Error in min$year : object of type 'builtin' is not subsettable
+> lines(minnesota$year, min$kpg, col="blue", lwd=2)
+Error in min$kpg : object of type 'builtin' is not subsettable
+> lines(minnesota$year, minnesota$kpg, col="blue", lwd=2)
+> 
